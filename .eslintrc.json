@@ -138,12 +138,6 @@
     "radix": ["error", "always"],
     "require-await": "error",
     "require-yield": "error",
-    "sort-imports": [
-      "error",
-      {
-        "ignoreCase": true
-      }
-    ],
     "yoda": ["error", "never"],
 
     "prettier/prettier": "error",
