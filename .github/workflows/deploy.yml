@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and deploy
 on:
   push:
     branches:
@@ -31,8 +31,8 @@ jobs:
       - name: Test
         run: npm run test
 
-      - name: deploy to gh-pages
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./build
+          branch: gh-pages
+          folder: dist
