@@ -12,7 +12,8 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "prettyprint": "prettier --check .",
-    "prettyprint:fix": "prettier --write ."
+    "prettyprint:fix": "prettier --write .",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
