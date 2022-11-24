@@ -1,7 +1,7 @@
 {
   "name": "github-actions-workshop-publish",
-  "version": "0.0.0",
-  "homepage": ".",
+  "version": "0.0.1",
+  "homepage": "https://gdsc-lodz-university-of-technology.github.io/github-actions-workshop",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,7 @@
     "lint:fix": "eslint . --ext .ts --fix",
     "prettyprint": "prettier --check .",
     "prettyprint:fix": "prettier --write .",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
