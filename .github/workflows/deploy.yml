@@ -14,14 +14,13 @@ jobs:
       - name: Checkout 💾
         uses: actions/checkout@v3
         with:
-          node-version: "18"
+          node-version: '18'
 
-      - name: Install and Build 🔧 
+      - name: Install and Build 🔧
         run: |
           npm ci
           npm run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - uses: EdricChan03/action-build-deploy-ghpages@v3.0.0
         with:
-          folder: dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
