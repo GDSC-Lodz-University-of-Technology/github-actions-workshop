@@ -20,13 +20,8 @@ jobs:
           node-version: '18.x'
           cache: 'npm'
 
-      - name: Install 
+      - name: Install
         run: npm ci
-      
+
       - name: Deploy 🚀
-       
-        run: |
-          chmod +x ./deploy.sh
-          ./deploy.sh
-        shell: bash
-          
+        run: npm run deploy
