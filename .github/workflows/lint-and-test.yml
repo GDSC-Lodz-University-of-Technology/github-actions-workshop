@@ -1,5 +1,3 @@
-name: <Name of the workflow>
-
 on:
   workflow_call:
 
