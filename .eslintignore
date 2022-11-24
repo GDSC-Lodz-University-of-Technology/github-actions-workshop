@@ -5,4 +5,5 @@
 /.nyc_output/*
 .eslintrc.json
 .pretierrc.json
+.vite.config.ts
 
