@@ -9,7 +9,6 @@ export const App = () => {
     <div className="App">
       <div>
         <a href="https://vitejs.dev" target="_blank">
-
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
 
@@ -17,7 +16,7 @@ export const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      
+
       <h1>Vite + React</h1>
       <div className="card">
         <button
