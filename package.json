@@ -1,13 +1,11 @@
 {
   "name": "github-actions-workshop",
   "version": "0.0.1",
-  "homepage": "https://gdsc-lodz-university-of-technology.github.io/github-actions-workshop",
+  "homepage": "https://gdsc-lodz-university-of-technology.github.io/github-actions-workshop/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
