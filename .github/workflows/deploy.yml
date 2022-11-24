@@ -16,15 +16,12 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Install dependencies 🔧
-        run: npm install
-
-      - name: Build 🧬
-        run: npm run build
-
-      - name: Deploy with gh-pages
+      - name: Install and Build 🔧 
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
