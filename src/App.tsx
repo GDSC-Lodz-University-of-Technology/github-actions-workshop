@@ -32,7 +32,8 @@ export const App = () => {
         </p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-      <p>HMR works, and perhaps deploy!</p>
+      <p>HMR works!</p>
+      <p>My brain isn't!</p>
     </div>
   );
 };

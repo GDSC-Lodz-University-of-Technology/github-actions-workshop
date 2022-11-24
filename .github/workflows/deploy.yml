@@ -13,8 +13,12 @@ jobs:
     steps:
       - name: Checkout 💾
         uses: actions/checkout@v3
+
+      - name: Setup Node.js 🦠
+        uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: '18.x'
+          cache: 'npm'
 
       - name: Install and Build
         run: |
