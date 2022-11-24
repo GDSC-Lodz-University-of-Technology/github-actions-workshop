@@ -5,11 +5,7 @@ on:
     types: [created]
 
 jobs:
-  lint-and-test:
-    uses: ./.github/workflows/lint-and-test.yml
-
   publish:
-    depends-on: lint-and-test
     name: Publish package to registry
     runs-on: ubuntu-latest
     steps:
