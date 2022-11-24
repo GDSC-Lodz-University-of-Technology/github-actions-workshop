@@ -35,6 +35,7 @@ export const App = () => {
       <p>HMR works!</p>
       <p>My brain isn't!</p>
       <p>soooo</p>
+      <p>dead</p>
     </div>
   );
 };
