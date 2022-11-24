@@ -1,0 +1,8 @@
+/node_modules/*
+/buildcache/*
+/dist/*
+/coverage/*
+/.nyc_output/*
+.eslintrc.json
+.pretierrc.json
+

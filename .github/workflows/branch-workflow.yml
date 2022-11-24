@@ -1,0 +1,10 @@
+name: branch-workflow
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lint-and-test:
+    uses: ./.github/workflows/lint-and-test.yml
