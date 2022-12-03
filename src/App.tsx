@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-import reactLogo from './react.svg';
 
 export const App = () => {
   const [count, setCount] = useState(0);
@@ -13,7 +12,7 @@ export const App = () => {
         </a>
 
         <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src="/react.svg" className="logo react" alt="React logo" />
         </a>
       </div>
 
